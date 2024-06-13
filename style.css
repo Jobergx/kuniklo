@@ -1,7 +1,47 @@
-.logo{
-    width: 100px;
-    padding: 20px;
+.card{
+    background-color: aquamarine;
 }
-.card-image {
+  .card-container {
+    display: grid;
+    grid-gap: 1rem; /* Adjust spacing between cards */
+  }
+  
+  /* Desktop Styles (apply to larger screens) */
+  @media (min-width: 1181px) {
+    .card-container {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+    }
+  }
+  
+  /* Tablet Styles (apply to medium screens) */
+  @media (min-width: 768px) and (max-width: 1180px) {
+    .card-container {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+    }
     
   }
+  
+  /* Mobile Styles (apply to smaller screens) */
+  @media (max-width: 575px) {
+    .card-container {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+    }
+    .card-container > .card:first-child {
+        grid-column: span 2; /* Spans across both columns */
+        align-self: center;
+        
+      }
+  }
+  
+  /* Style the card elements */
+  .card {
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 0.5rem;
+    box-shadow: 5px 4px 3px rgba(0, 0, 0, 0.1);
+    /* Add additional styles for cards here */
+  }
+  
