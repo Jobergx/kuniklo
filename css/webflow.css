@@ -8,7 +8,7 @@
 [class*=" w-icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'webflow-icons' !important;
-  speak: none;
+  
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -88,7 +88,7 @@ html.w-mod-touch * {
   display: inline-block;
   padding: 9px 15px;
   background-color: #3898EC;
-  color: black;
+  color: #fff;
   border: 0;
   line-height: inherit;
   text-decoration: none;
@@ -97,6 +97,7 @@ html.w-mod-touch * {
 }
 input.w-button {
   -webkit-appearance: button;
+  appearance: button;
 }
 html[data-w-dynpage] [data-w-cloak] {
   color: transparent !important;
@@ -164,8 +165,7 @@ pre.w-code-block code {
   text-transform: inherit;
   list-style-type: disc;
   text-shadow: none;
-  font-smoothing: auto;
-  vertical-align: baseline;
+  
   cursor: inherit;
   white-space: inherit;
   word-break: normal;
@@ -310,6 +310,7 @@ button,
   border: 0;
   cursor: pointer;
   -webkit-appearance: button;
+  appearance: button;
 }
 .w-form {
   margin: 0 0 15px;
@@ -341,7 +342,7 @@ label {
   font-size: 14px;
   line-height: 1.42857143;
   color: #333333;
-  vertical-align: middle;
+
   background-color: #ffffff;
   border: 1px solid #cccccc;
 }
@@ -935,7 +936,7 @@ textarea.w-select {
   background: #dddddd;
   clear: both;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  tap-highlight-color: rgba(0, 0, 0, 0);
+
 }
 .w-slider-mask {
   position: relative;
@@ -968,7 +969,7 @@ textarea.w-select {
   height: 40px;
   text-align: center;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  tap-highlight-color: rgba(0, 0, 0, 0);
+  
 }
 .w-slider-nav.w-round > div {
   border-radius: 100%;
@@ -1026,7 +1027,7 @@ textarea.w-select {
   color: white;
   font-size: 40px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  tap-highlight-color: rgba(0, 0, 0, 0);
+
   user-select: none;
 }
 .w-slider-arrow-left [class^='w-icon-'],
@@ -1180,8 +1181,10 @@ textarea.w-select {
   opacity: 0;
   -webkit-user-select: none;
   -moz-user-select: none;
+  user-select: none;
   -webkit-tap-highlight-color: transparent;
   -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
   /* 2 */
 }
 /**
@@ -1341,6 +1344,7 @@ textarea.w-select {
   /* 1 */
   cursor: pointer;
   -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
   /* 2 */
 }
 .w-lightbox-active {
@@ -1669,7 +1673,7 @@ textarea.w-select {
   display: none;
   cursor: pointer;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  tap-highlight-color: rgba(0, 0, 0, 0);
+  
   user-select: none;
 }
 .w-nav-button:focus {
